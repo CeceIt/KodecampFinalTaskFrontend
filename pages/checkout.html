@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="../Images/logo.png" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/product.html">Shop</a></li>
+          <li><a href="../pages/Aboutus.html">About</a></li>
+          <li><a href="../pages/contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button>Search</button>
+      </div>
+      <div class="cart-icon">
+        <a href="cart.html">
+          <img src="../Images/cart.png" alt="Cart" />
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="checkout-form">
+        <h2>Billing Information</h2>
+        <form id="billing-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="address">Address:</label>
+          <textarea id="address" required></textarea>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" required />
+        </form>
+
+        <h2>Shipping Information</h2>
+        <form id="shipping-form">
+          <label for="shipping-address">Shipping Address:</label>
+          <textarea id="shipping-address"></textarea>
+        </form>
+
+        <h2>Payment Information</h2>
+        <form id="payment-form">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" required />
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="text" id="expiry-date" required />
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required />
+        </form>
+
+        <section class="order-summary">
+          <h2>Order Summary</h2>
+          <ul id="order-summary-list">
+           
+          </ul>
+          <button id="place-order-btn">Place Order</button>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <div>
+          <img src="../Images/facebook.png" alt="facebook icon" id="facebook" />
+          <p><a href="#">Facebook</a></p>
+        </div>
+        <div>
+          <img src="../Images/twitter.png" alt="Twitter" id="twitter" />
+          <p><a href="#">Twitter</a></p>
+        </div>
+        <div>
+          <img src="../Images/ins.jpg" alt="instagram" id="instagram" />
+          <p><a href="#">Instagram</a></p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <p>Contact us at: ceciliaitodo247@gmail.com</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./Images/logo.png" alt="Store Logo"></div>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleHamburgerMenu()">☰
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/product.html">Shop</a></li>
+                <li><a href="./pages/Aboutus.html">About</a></li>
+                <li><a href="./pages/contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+        <div class="cart-icon">
+            <a href="./pages/cart.html">
+                <img src="./Images/cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover amazing products tailored just for you.</p>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list" id="featured-products-list">
+                
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#" class="category-link" data-category="electronics">Electronics</a></li>
+                <li><a href="#" class="category-link" data-category="jewelery">Jewelery</a></li>
+                <li><a href="#" class="category-link" data-category="men's clothing">Men's Clothing</a></li>
+                <li><a href="#" class="category-link" data-category="women's clothing">Women's Clothing</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+           <div><img src="./Images/facebook.png" alt="Facebook" id="facebook">
+                <p id="face"><a href="#">Facebook</a></p></div>
+           <div><img src="./Images/twitter.png" alt="Twitter" id="twitter">
+            <p><a href="#">Twitter</a></p></div>
+           <div><img src="./Images/ins.jpg" alt="Instagram" id="instagram">
+            <p><a href="#">Instagram</a></p></div>
+        </div>
+        <div class="contact-info">
+            <p>Contact us at: ceciliaitodo247@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

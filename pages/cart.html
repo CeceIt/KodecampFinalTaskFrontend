@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../Images/logo.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/product.html">Shop</a></li>
+                <li><a href="../pages/Aboutus.html">About</a></li>
+                <li><a href="../pages/contactus.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" name="search" placeholder="Search products..." />
+            <button>Search</button>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html">
+                <img src="../Images/cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div> 
+    </header>
+
+    <main>
+        <section class="cart-items">
+            <h2 id="shop">Your Shopping Cart</h2>
+            <ul id="cart-list">
+            </ul>
+            <div class="cart-summary">
+                <div class="cartsummary">
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Total: $<span id="total">0.00</span></p></div>
+                <div class="checkout-btn">
+                <a href="checkout.html" >Proceed to Checkout</a>
+            </div></div>
+        </section3>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <div><img src="../Images/facebook.png" alt="facebook icon" id="facebook">
+                 <p><a href="#">Facebook</a></p></div>
+            <div> <img src="../Images/twitter.png" alt="Twitter" id="twitter">
+             <p><a href="#">Twitter</a></p></div>
+            <div><img src="../Images/ins.jpg" alt="instagram" id="instagram">
+             <p><a href="#">Instagram</a></p></div>
+         </div>
+         <div class="contact-info">
+             <p>Contact us at: ceciliaitodo247@gmail.com</p>
+         </div>
+    
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
